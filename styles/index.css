@@ -2,4 +2,6 @@
 
 @import url('./common.css');
 
+@import url('./utils.css');
+
 @import url('./components/index.css');

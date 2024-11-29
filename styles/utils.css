@@ -1,0 +1,24 @@
+.t-center {
+    text-align: center;
+}
+.w-100 {
+    width: 100%;
+}
+.d-block {
+    display: block;
+}
+.image-mask-roughness {
+    mask-image: url('../images/main/infographic/roughness.png'); /* Изображение-маска */
+    mask-size: cover; /* Подгон размера маски */
+    mask-repeat: no-repeat; /* Маска без повторения */
+    mask-position: center; /* Центрирование маски */
+    -webkit-mask-image: url('../images/main/infographic/roughness.png'); /* Для WebKit-браузеров */
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+.bg-old-paper {
+    background-image: url("../images/screen/bg_welcome_screen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,30 @@
+.section-welcome {
+    position: relative;
+    padding-top: 26px;
+    height: 700px;
+    width: 100%;
+}
+.section-welcome__container {
+    position: relative;
+    grid-template-rows: max-content max-content;
+    padding-left: 72px;
+    height: 100%;
+}
+.section-welcome__container__info {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+.section-welcome__container__info h1 {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.section-welcome__container__info p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.container__info__buttons {
+    display: flex;
+    column-gap: 16px;
+}

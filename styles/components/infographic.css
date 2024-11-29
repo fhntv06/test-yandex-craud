@@ -1,0 +1,45 @@
+.section-welcome__infographic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    pointer-events: none;
+}
+.infographic__king {
+    top: 36%;
+    right: 39%;
+}
+.infographic__queen {
+    top: 17%;
+    right: 11%;
+}
+.infographic__horse {
+    z-index: 10;
+    position: absolute;
+    bottom: -4%;
+    right: 25%;
+    height: 250px;
+}
+.infographic__king,
+.infographic__queen {
+    z-index: 8;
+    position: absolute;
+    height: 250px;
+    object-fit: contain;
+}
+.infographic__city {
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 460px;
+    transform: translateX(-50%);
+}
+.infographic__pawn {
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    height: 120px;
+}

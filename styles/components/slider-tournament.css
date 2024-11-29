@@ -1,0 +1,98 @@
+.slider-tournament {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+.slider-tournament__navigation {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    column-gap: 14px;
+}
+.slider-tournament__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--color-gray-dark);
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.slider-tournament__button.button-prev svg {
+    transform: translateX(-2px);
+}
+.slider-tournament__button.button-next svg {
+    transform: translateX(2px);
+}
+.slider-tournament__button:hover {
+    background-color: var(--color-yellow);
+}
+.slider-tournament__button.disabled {
+    background-color: var(--color-gray-highlight);
+    pointer-events: none;
+}
+.slider-tournament__button:hover,
+.slider-tournament__button.disabled {
+    transition-timing-function: ease-in;
+}
+.slider-tournament__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+}
+.counter-max-slide {
+    color: var(--color-gray);
+}
+
+
+/* --- start container-slides --- */
+.slider-tournament__container-slides {
+    display: flex;
+    margin-top: 60px;
+}
+.slider-tournament__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 394px;
+    max-width: 394px;
+    height: max-content;
+    max-height: 462px;
+    padding: 0 36px;
+}
+.slide__container-img {
+    margin-bottom: 28px;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.slide-img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}
+.slide-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.slide-info p {
+    color: var(--color-gray-opacity);
+}
+.slider-tournament__slide:not(:last-child) {
+    margin-right: 20px;
+}
+.slide-link {
+    width: 115px;
+    padding: 12px;
+    border-radius: 62px;
+    border: 1px solid var(--color-blue-link);
+}
+/* --- end container-slides --- */

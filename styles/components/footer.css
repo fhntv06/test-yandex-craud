@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer__content {
+    grid-column: 1/-1;
+    padding: 40px 72px 72px;
+}
+.footer__content p {
+    color: var(--color-gray-opacity);
+}
